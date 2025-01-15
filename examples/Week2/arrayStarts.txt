@@ -1,0 +1,37 @@
+lotrCharacters = ['Frodo', 'Aragorn', 'Gandalf', 'Legolas', 'Gimli'];
+
+captains = ["Benjamin Pike", "James T. Kirk", "Jean Luc Picard", "Kathryn Janeway", "Gabriel Lorca", "Spock", "Michael Burnam", "Hikaru Sulu", "Jonathan Archer", "Douglas Adams"];
+
+const animals = ["dog", "cat", "rat", "hamster", "horse", "cow", "pig", "goldfish"];
+
+companions = ['Rose Tyler', 'Mickey Smith', 'Clara Oswald', 'River Song', 'Amy Pond', 'Jamie McCrimmon'];
+
+everyOne = [1, 30, 39, 29, 20, 13];
+everyTwo = [1, 2, 3, 4, 10, 21]
+someOne = [1, 2, 3, 4, 5];
+
+words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present','fries'];
+
+mapArray = [1, 4, 9, 16];
+
+mySort = ["HELLO", "hello", "hEllo", "réservé", "RESERVE", "Reserve", "rezerve"];
+mySort2 = [2, 5, 4, 100, 13, 6, 201, 51];
+
+xMen = ["Wolverine", "Cyclops", "Storm", "Beast", "Professor X", "Jean Grey", "Rogue", "Magneto", "Gambit"];
+
+myNumbers = [7, 5, 8, 12, 6, 10];
+
+records = [
+    { id: 1, firstName: "Anita", lastName: "Bath", isStudent: true, age: 19 },
+    { id: 2, firstName: "Hugh", lastName: "Jass", isStudent: true, age: 21 },
+    { id: 3, firstName: "Paige", lastName: "Turner", isStudent: false, age: 35 },
+    { id: 4, firstName: "Justin", lastName: "Case", isStudent: true, age: 20 },
+    { id: 5, firstName: "Eileen", lastName: "Dover", isStudent: false, age: 28 },
+    { id: 6, firstName: "Al", lastName: "Dente", isStudent: true, age: 22 },
+    { id: 7, firstName: "Holly", lastName: "Wood", isStudent: true, age: 18 },
+    { id: 8, firstName: "Chris P.", lastName: "Bacon", isStudent: false, age: 31 },
+    { id: 9, firstName: "Ima", lastName: "Hogg", isStudent: true, age: 19 },
+    { id: 10, firstName: "Ben", lastName: "Dover", isStudent: false, age: 26 },
+    { id: 11, firstName: "Sue", lastName: "Flay", isStudent: true, age: 20 },
+    { id: 12, firstName: "Robin", lastName: "Banks", isStudent: false, age: 29 }
+];
