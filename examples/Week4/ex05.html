@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Getting Form Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <style type="text/css">
+        #formDiv {
+            width: 50%;
+            float: left;
+        }
+
+        #msgDiv {
+            width: 50%;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>A Form to Nowhere</h2>
+
+<div id="formDiv">
+    <form action="#" id="myForm" method="get">
+        <label for="username">Username: </label>
+        <input id="username" name="theUserName" placeholder="Username" type="text"/><br/>
+        <label for="surname">Last Name: </label>
+        <input id="surname" name="theName" placeholder="Last name" type="text"/><br/>
+    </form>
+</div>
+<div id="msgDiv">
+    <span id="userMsg"></span><br/>
+    <span id="surnameMsg"></span><br/>
+</div>
+<script src="./js/ex05.js"></script>
+
+</body>
+
+</html>

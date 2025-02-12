@@ -1,0 +1,12 @@
+let h2Element = document.querySelector("h2");
+let ulElement = document.querySelector("ul");
+let idElement = document.querySelector("#divId");
+let classElement = document.querySelector(".newClass");
+let pElement = document.querySelector("p");
+let allParagraphElements = document.querySelectorAll("p");
+let divElement = document.querySelector("#divId>p");
+let allDivParagraph = document.querySelectorAll("div:nth-child(2) p");
+let thirdULElement = document.querySelector("main ul li:nth-child(3)");
+let styleElement = document.querySelector("[style]");
+let styleElementFont = document.querySelector("[style = 'font-style:italic']");
+let imageElement = document.querySelectorAll("img:not[alt]");

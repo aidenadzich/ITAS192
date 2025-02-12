@@ -1,0 +1,25 @@
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+}
+
+span {
+	color: red;
+	font-size: .7em;
+	padding-bottom: .5em;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+.errorClass {
+	border: 3px solid red;
+}
+
+#theResult {
+	color: blue;
+	padding-top: .5em;
+}
+
+#formFormat {
+	max-width: 50%;
+}

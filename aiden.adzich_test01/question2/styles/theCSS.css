@@ -1,0 +1,22 @@
+body {
+	font-family: Verdana, Georgia, sans-serif;
+}
+#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#land {
+	margin-right: 1em;
+	border: thick inset burlywood;
+	padding-left: 1em;
+}
+#air {
+	margin-right: 1em;
+	border: thick inset skyblue;
+	padding-left: 1em;
+}
+#water {
+	margin-right: 1em;
+	border: thick inset aqua;
+	padding-left: 1em;
+}

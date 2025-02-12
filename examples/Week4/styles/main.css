@@ -1,0 +1,10 @@
+body {
+    font-family: Calibri, Arial, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+
+input[type="text"] {
+    margin-bottom: 15px;
+}

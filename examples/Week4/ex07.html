@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Form Information</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style type="text/css">
+        section {
+            display: grid;
+            grid-template-columns: 400px 600px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 100px 200px;
+            grid-row-gap: 8px;
+        }
+
+        form > label {
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        #msgDiv {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-row-gap: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>A Form to Nowhere</h2>
+<section>
+    <div id="formDiv">
+        <form action="#" id="myForm" method="get">
+            <label for="username">Username: </label>
+            <input id="username" name="theUserName" placeholder="Username" type="text"/><br/>
+        </form>
+    </div>
+    <div id="msgDiv">
+        <span id="userMsg"></span><br/>
+    </div>
+</section>
+<script src="./js/ex07.js"></script>
+
+</body>
+
+</html>

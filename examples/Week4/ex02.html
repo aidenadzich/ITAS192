@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Form Information</title>
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h2>A Form to Nowhere</h2>
+
+<form id="myForm" action="#" method="get">
+    <label for="surname">Last Name: </label>
+    <input type="text" id="surname" name="theName" placeholder="Last name" /><br /><br/>
+
+    <input type="checkbox" id="chk1" name="varCheck" value="chkEmail" />
+    <label for="chk1"> Email</label><br />
+    <input type="checkbox" id="chk2" name="varCheck" value="chkTwit" />
+    <label for="chk2"> Twitter</label><br /><br/>
+
+    <input type="radio" id="male" name="gender" value="1" />
+    <label for="male"> Male</label><br />
+    <input type="radio" id="female" name="gender" value="2" />
+    <label for="female"> Female</label><br />
+    <input type="radio" id="nonDisc" name="gender" value="3" />
+    <label for="nonDisc"> Not disclosed</label><br /><br/><br/>
+    
+    <label for="ddlGet">Select: </label>
+    <select id="ddlGet">
+        <option value="1">test1</option>
+        <option value="2">test2</option>
+        <option value="3">test3</option>
+        <option value="4">test4</option>
+        <option value="5">test5</option>
+        <option value="6">test6</option>
+    </select>
+    <br />
+    <input type="button" id="btnSub" value="Go" />
+
+</form>
+
+<div>
+    <p>Name: <span id="outName"></span></p>
+    <p>Email: <span id="outEmail"></span></p>
+    <p>Twitter: <span id="outTwit"></span></p>
+    <p>Which Check Boxes Checked: <span id="outCheck"></span></p>
+    <p>Radio: <span id="outRadio"></span></p>
+    <p>Dropdown: <span id="outDrop"></span></p>
+</div>
+
+<script src="./js/ex02.js"></script>
+
+</body>
+
+</html>

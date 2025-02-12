@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unreal Data</title>
+  <link href="styles/theCSS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Unreal Data</h1>
+<div id="formFormat">
+<form action="question3Processor.html" method="get" id="testForm">
+  <p>
+    <label for="username">Name:</label>
+    <input name="username" type="text" id="username" placeholder="Name" size="30" /><br>
+    <span id="usernameError"></span>
+  </p>
+  <p>
+    <label for="userId">User Id: </label>
+    <input name="userId" type="text" id="userId" placeholder="User Id" size="50" /><br>
+    <span id="userIdError"></span>
+  </p>
+  <p>
+    <label for="license">License: </label>
+    <input name="license" type="text" id="license" size="20" placeholder="License Number" /><br>
+    <span id="licenseError"></span>
+  </p>
+  <fieldset>
+    <legend>What Level?</legend>
+    <p>
+      <label>
+        <input type="radio" name="level" value="I" id="levelI" />
+        Level I</label><br>
+      <label>
+        <input type="radio" name="level" value="II" id="levelII" />
+        Level II</label><br>
+      <label>
+        <input type="radio" name="level" value="III" id="levelIII" />
+        Level III</label><br>
+      <label>
+        <input type="radio" name="level" value="IV" id="levelIV" />
+        Level IV</label><br>
+      <span id="levelError"></span>    
+    </p>
+  </fieldset><br>
+  <input id="subButton" type="submit" value="Check Form"/>
+</form>
+</div>
+<script src="./js/question3.js"></script>
+
+</body>
+</html>

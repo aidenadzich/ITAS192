@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes</title>
+    <link href="styles/partd.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1 class="Header">Reservation Costs</h1>
+    <form id="reservationInfo" name="reservationInfo">
+      <p>
+        <label for="numGuests" class="formlabel">Guests: </label>
+        <input
+          name="numGuests"
+          type="text"
+          class="dataField"
+          id="numGuests"
+          size="10"
+          maxlength="10"
+        />
+      </p>
+      <p>
+        <label for="numNights" class="formlabel">Total Nights: </label>
+        <input
+          name="numNights"
+          type="text"
+          class="dataField"
+          id="numNights"
+          size="10"
+          maxlength="10"
+        />
+      </p>
+      <p class="formlabel">
+        <input
+          name="btnCreate"
+          type="button"
+          class="formlabel"
+          id="btnCreate"
+          value="Create"
+        />
+      </p>
+      <p>
+        <label for="costExtras" class="formlabel">Cost of Extras: </label>
+        <input
+          name="costExtras"
+          type="text"
+          class="dataField"
+          id="costExtras"
+          size="10"
+          maxlength="10"
+        />
+      </p>
+      <p class="formlabel">
+        <input
+          name="btnCalc"
+          type="button"
+          class="formlabel"
+          id="btnCalc"
+          value="Calculate"
+        />
+      </p>
+    </form>
+    <p>The total cost is: <span id="outTotal"></span></p>
+    <p>The total per person is: <span id="outPerPerson"></span></p>
+    <script src="./js/partd.js"></script>
+  </body>
+</html>
