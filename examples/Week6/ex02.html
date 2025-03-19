@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <title>Event Bubbling</title>
+	<style type="text/css">
+		.colourClass  {
+			background-color: #009;
+			color: #fff;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		table, td {
+			border: thin solid black;
+			padding: .5em;
+		}
+		.newFont {
+			font-variant: small-caps;
+			font-style: italic;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<h2>Event Bubbling</h2>
+
+	<div id="level1">
+		<h1>This is div level 1</h1>
+		<div id="level2">
+			<h2>This is div level 2</h2>
+			<table id="tableId">
+				<tr id="rowId1">
+					<td id="colId1">Some data</td>
+					<td id="colId2">Add more information</td>
+					<td id="colId3">This has value</td>
+				</tr>
+				<tr id="rowId2">
+					<td id="colId4">Line 2 Some data</td>
+					<td id="colId5">Add information</td>
+					<td id="colId6">Fuzzy caterpillar</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<script src="./js/ex02.js"></script>
+
+</body>
+
+</html>

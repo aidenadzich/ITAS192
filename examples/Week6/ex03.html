@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing</title>
+	<style type="text/css">
+		.colourClass  {
+			background-color: #009;
+			color: #fff;
+		}
+		.tableClass  {
+			border: 10px dotted yellow;
+			color: #fff;
+		}
+		.trClass {
+			font-size: 2em;
+			color: #fff;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		table, td {
+			border: thin solid black;
+			padding: .5em;
+		}
+		.newFont {
+			font-variant: small-caps;
+			font-style: italic;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+
+	<h2>Event Capturing</h2>
+
+	<div id="level1" class="colourClass">
+		<h1>This is div level 1</h1>
+		<div id="level2" class="colourClass">
+			<h2>This is div level 2</h2>
+			<table id="tableId" class="tableClass">
+				<tr id="rowId1" class="trClass">
+					<td id="colId1" class="colourClass">Some data</td>
+					<td id="colId2" class="colourClass">Add more information</td>
+					<td id="colId3" class="colourClass">This has value</td>
+				</tr>
+				<tr id="rowId2" class="trClass">
+					<td id="colId4" class="colourClass">Line 2 Some data</td>
+					<td id="colId5" class="colourClass">Add information</td>
+					<td id="colId6" class="colourClass">Fuzzy caterpillar</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script src="./js/ex03.js"></script>
+</body>
+
+</html>

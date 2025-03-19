@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Form Information</title>
+	<style type="text/css">
+	#myForm {
+		border:3px solid #000000;
+		padding:10px;
+		margin:10px;
+		min-width:25em;
+		width:50%;
+	}
+
+	.myRow {
+		height:2.5em;
+		font-family:Arial,sans-serif;
+		font-size:.9em;
+	}
+
+	.myButton {
+		margin-top:10px;
+		margin-left:105px;
+		font-family:Arial,sans-serif;
+		font-size:.9em;
+	}
+
+	.labelCol {
+		float:left;
+		width:100px;
+		margin-right: 5px;
+		text-align:right;
+	}
+	
+	.errMsg {
+		margin-left:105px;
+		font-family:"Arial, sans-serif";
+		font-size:.8em;
+		color:red;
+	}
+	.spanErr {
+		color: red;
+		font-size: 1.4em;
+	}
+	
+
+	</style>
+
+	</head>
+
+<body>
+
+<h2>A Form to Nowhere</h2>
+<div id="myFormDiv">
+	<form id="myForm" action="ex07LocalStorageGet.html" method="get">
+		<div class="myRow">
+			<label class="labelCol" for="username">Username: </label>
+			<!-- The error div MUST be on same line as the input field as the "space" between is considered a node -->
+			<input type="text" id="username" name="theUsername" placeholder="Username"  size="10" /><div class="errMsg"></div>
+		</div>
+		<div class="myRow">
+			<label class="labelCol" for="fName">First name: </label>
+			<input type="text" id="fName" name="fName" placeholder="First name" size="20" /><div class="errMsg"></div>
+		</div>
+		<div class="myRow">
+			<label class="labelCol" for="lName">Last name: </label>
+			<input type="text" id="lName" name="lName" placeholder="Last Name" size="30" /><div class="errMsg"></div>
+		</div>
+		<div class="myButton">
+		<input type="submit" id="btnSub" value="Go"/><span class="spanErr"></span>
+	</div>
+	</form>
+</div>
+
+<script src="./js/ex06.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body {
+    background-color: #000;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+#page {
+    max-width: 480px;
+    background-color: #403c3b;
+    margin: 0 auto 0 auto;
+}
+
+h1 {
+    background-image: url(../images/Hot-Air-Balloon-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 72px 72px;
+    text-align: center;
+    text-indent: -1000%;
+    height: 75px;
+    line-height: 75px;
+    width: 200px;
+    margin: 0 auto 0 auto;
+    padding: 30px 10px 20px 10px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    margin: 0 0 23px 0;
+}
+
+form {
+    padding: 0 60px 65px 60px;}
+
+label {
+    color: #fff;
+    display: block;
+    margin: 10px 0 10px 0;
+    font-size: 1.4em;}
+
+input[type='submit'], a.add {
+    background-color: #cb6868;
+    color: #f3dad1;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    float: right;
+    font-size: .9em;
+    text-decoration: none;
+    text-transform: uppercase;}
+
+input[type='submit']:hover, a.add:hover {
+    background-color: #d75359;
+    color: #f3dad1;
+    cursor: pointer;
+    box-shadow: none;
+    position: relative;
+    top: 1px;}
+
+select, option {
+    font-size: .9em;}
+
+
+#feedback, #termsHint  {
+    color: #fff;
+    background-image: url('../images/warning.png');
+    background-repeat: no-repeat;
+    background-position: 2px 14px;
+    padding: 10px 0 0 22px;}
+
+#packageHint {
+    color: #fff;
+    background-image: url('../images/hint.png');
+    background-repeat: no-repeat;
+    background-position: 2px 5px;
+    padding-left: 22px;}
+
+.selectbox {
+    display: inline;}
+
+.checkbox {
+    display: inline;
+    font-size: .8em;}
+
+#feedback.warning {background-image: url('../images/warning.png');}
+#feedback.tip {background-image: url('../images/tip.png');}

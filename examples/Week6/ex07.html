@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>More Form Events</title>
+	<link href="./styles/example06.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="page">
+      <h1>Sign Up</h1>
+      <form method="get" action="processData.html" id="formSignup">
+        <h2>Membership</h2>
+
+        <label for="package" class="selectbox"> Select a package: </label>
+        <select id="package">
+          <option value="annual">1 year ($50)</option>
+          <option value="monthly">1 month ($5)</option>
+        </select>
+        <div id="packageHint" class="tip"></div>
+
+        <input type="checkbox" id="terms" />
+        <label for="terms" class="checkbox"> Check to agree to terms &amp; conditions</label>
+        <div id="termsHint" class="warning"></div>
+
+        <input type="submit" value="next" />
+
+        </form>
+      </div>
+      <script src="./js/ex07.js"></script>>
+
+    </body>
+</html>
