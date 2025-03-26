@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/modules/validate.js" type="module" defer></script>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">ITAS192 Assignment 2 - Aiden Adzich</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <!-- User Registration Form -->
+        <div class="bg-gray-800 shadow-md rounded-lg p-8 w-full max-w-lg mx-auto mb-8">
+            <h1 class="text-2xl font-bold text-gray-100 mb-6 text-center">User Registration</h1>
+            <form method="post" autocomplete="off" class="space-y-4">
+                <!-- First Name-->
+                <div>
+                    <label for="firstName" class="block text-gray-300 font-medium">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" aria-required="true" aria-describedby="firstNameError" class="w-full border border-gray-600 rounded-lg p-2 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <span id="firstNameError" class="text-red-500 text-sm mt-1" aria-live="polite"></span> <!-- Error message -->
+                </div>
+                
+                <!-- Last Name -->
+                <div>
+                    <label for="lastName" class="block text-gray-300 font-medium">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" aria-required="true" aria-describedby="lastNameError" class="w-full border border-gray-600 rounded-lg p-2 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <span id="lastNameError" class="text-red-500 text-sm mt-1" aria-live="polite"></span> <!-- Error message -->
+                </div>
+                
+                <!-- Username -->
+                <div>
+                    <label for="username" class="block text-gray-300 font-medium">Username:</label>
+                    <input type="text" id="username" name="username" aria-required="true" aria-describedby="usernameError" class="w-full border border-gray-600 rounded-lg p-2 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <span id="usernameError" class="text-red-500 text-sm mt-1" aria-live="polite"></span> <!-- Error message -->
+                </div>
+                
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-gray-300 font-medium">Email:</label>
+                    <input type="text" id="email" name="email" maxlength="35" aria-required="true" aria-describedby="emailError" class="w-full border border-gray-600 rounded-lg p-2 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <span id="emailError" class="text-red-500 text-sm mt-1" aria-live="polite"></span> <!-- Error message -->
+                </div>
+                
+                <!-- Phone Number -->
+                <div>
+                    <label for="phoneNumber" class="block text-gray-300 font-medium">Phone Number:</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" aria-required="true" aria-describedby="phoneError" class="w-full border border-gray-600 rounded-lg p-2 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <span id="phoneError" class="text-red-500 text-sm mt-1" aria-live="polite"></span> <!-- Error message -->
+                </div>
+
+                <!-- Preferred Operating System -->
+                <div>
+                    <label class="block text-gray-300 font-medium mb-2">Preferred Operating System:</label>
+                    <div class="flex space-x-4" role="radiogroup" aria-labelledby="osLabel">
+
+                        <!-- Windows -->
+                        <div class="relative flex items-center space-x-2">
+                            <input type="radio" id="windows" name="operatingSystem" value="Windows" aria-checked="false" class="peer opacity-0 absolute left-0 top-0 w-full h-full cursor-pointer">
+                            <div class="w-6 h-6 rounded-full border-2 border-gray-600 peer-checked:border-gray-600 peer-checked:bg-blue-500 peer-checked:border-3"></div>
+                            <label for="windows" class="cursor-pointer">
+                                <img src="/assets/windows.png" alt="Windows Logo" class="w-6 h-6">
+                            </label>
+                        </div>
+
+                        <!-- macOS -->
+                        <div class="relative flex items-center space-x-2">
+                            <input type="radio" id="ios" name="operatingSystem" value="iOS" aria-checked="false" class="peer opacity-0 absolute left-0 top-0 w-full h-full cursor-pointer">
+                            <div class="w-6 h-6 rounded-full border-2 border-gray-600 peer-checked:border-gray-600 peer-checked:bg-blue-500 peer-checked:border-3"></div>
+                            <label for="ios" class="cursor-pointer">
+                                <img src="/assets/apple.png" alt="macOS Logo" class="w-6 h-6">
+                            </label>
+                        </div>
+                        
+                        <!-- Linux -->
+                        <div class="relative flex items-center space-x-2">
+                            <input type="radio" id="linux" name="operatingSystem" value="Linux" aria-checked="false" class="peer opacity-0 absolute left-0 top-0 w-full h-full cursor-pointer">
+                            <div class="w-6 h-6 rounded-full border-2 border-gray-600 peer-checked:border-gray-600 peer-checked:bg-blue-500 peer-checked:border-3"></div>
+                            <label for="linux" class="cursor-pointer">
+                                <img src="/assets/linux.png" alt="Linux Logo" class="w-6 h-6">
+                            </label>
+                        </div>
+                    </div>
+                    <span id="osError" class="text-red-500 text-sm mt-1" aria-live="polite"></span> <!-- Error message -->
+                </div>
+
+                <!-- Terms Agreement -->
+                <div>
+                    <label for="agreedTerms" class="block text-gray-300 font-medium mb-2">Agree to Terms:</label>
+                    <div class="flex items-center space-x-2 ml-2">
+                        <div class="relative">
+                            <input type="checkbox" id="agreedTerms" name="agreedTerms" value="true" aria-required="true" aria-describedby="termsError" class="peer opacity-0 absolute left-0 top-0 w-6 h-6 cursor-pointer">
+                            <div class="w-6 h-6 flex items-center justify-center border-2 border-gray-600 rounded-md peer-checked:border-gray-600 peer-checked:bg-blue-500 peer-checked:border-3">
+                                <svg class="w-4 h-4 text-white hidden peer-checked:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                        </div>
+                        <label for="agreedTerms" class="text-gray-300 cursor-pointer">I agree</label>
+                    </div>
+                    <span id="termsError" class="text-red-500 text-sm mt-1" aria-live="polite"></span> <!-- Error message -->
+                </div>
+
+                <!-- Province/Territory -->
+                <div>
+                    <label for="province" class="block text-gray-300 font-medium">Province/Territory:</label>
+                    <select id="province" name="province" class="w-full border border-gray-600 rounded-lg p-2 bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="">--Select a Province--</option>
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="YT">Yukon</option>
+                    </select>
+                    <span class="text-red-500 text-sm mt-1"></span> <!-- Error message -->
+                </div>
+
+                <!-- Register Button -->
+                <button name="register" type="button" class="w-full bg-blue-500 text-white font-medium py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    Register
+                </button>
+            </form>
+        </div>
+
+        <!-- Registered Users -->
+        <div class="bg-gray-800 shadow-md rounded-lg p-8 w-full max-w-5xl mx-auto">
+            <h2 class="text-xl font-bold text-gray-100 mb-4">Registered Users</h2>
+            <!-- Header Row -->
+            <div class="grid grid-cols-[2fr,2fr,3fr,2fr,2fr,1fr,1fr] gap-0 font-medium text-gray-300 bg-gray-700 p-4 rounded-t-lg border border-gray-600">
+                <div class="text-center border-r border-gray-600">Full Name</div>
+                <div class="text-center border-r border-gray-600">Username</div>
+                <div class="text-center border-r border-gray-600">Email</div>
+                <div class="text-center border-r border-gray-600">Phone</div>
+                <div class="text-center border-r border-gray-600">Province</div>
+                <div class="text-center border-r border-gray-600">O/S</div>
+                <div class="text-center">Agreed</div>
+            </div>
+            <!-- User List -->
+            <div id="userList" class="divide-y divide-gray-600 border border-gray-600">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-4">
+        <div class="container mx-auto text-center">
+            <p>ITAS192 Assignment 2 - Aiden Adzich</p>
+        </div>
+    </footer>
+
+</body>
+</html>
