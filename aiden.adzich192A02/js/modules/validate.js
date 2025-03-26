@@ -1,6 +1,6 @@
 import User from '../classes/User.js';
 
-let $$ = document.querySelector.bind(document);
+const $$ = document.querySelector.bind(document);
 let users = [];
 
 document.addEventListener('DOMContentLoaded', function() {
